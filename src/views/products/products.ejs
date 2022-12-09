@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type = "text/css" rel="stylesheet" href="css/bootstrap.css">
+    <title>Products</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <%- include('../partials/header')  %> 
+    <!-- /HEADER -->
+
+    <main>
+
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">SOMEWHERE OVER</h1>
+              <p class="lead text-secondary">Welcome to products, here was can you modific a product or products, TOO was can you views the any products</p>
+              <p>
+                <a href="/404-page" class="btn btn btn-warning my-2">ADD PRODUCTS</a>
+                <a href="/404-page" class="btn btn-outline-secondary my-2">REMOVE PRODUCTS</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      
+        <div class="album py-5 bg-light">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+            <% products.forEach(products => { %>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="auto" height="100%" src="images/<%= products.images %>" alt="<%= products.name %>"/>
+      
+                  <div class="card-body text-bg-light">
+                    <p class="card-text text-secondary "><%= products.description %> </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary"><a class="nav-link" href="products/detalles/<%= products.id %>  ">Detalles</a></button>
+                        <button type="button" class="btn btn-outline-secondary">Edit </button>
+                      </div>
+                      <small class="text-secondary">PRECIO <%= products.price %>$ </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <% }) %>
+            
+            </div>
+          </div>
+        </div>
+      
+      </main>
+      
+
+
+
+    <!-- FOOTER -->
+    <%- include('../partials/footer')  %> 
+    <!-- /FOOTER -->
+</body>
+</html>
