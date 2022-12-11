@@ -26,7 +26,7 @@
         "price": 19,
         "description": "Integrales good Organicos",
         "images": "abocado3.jpg",
-        "color": "text-bg-secondary  "
+        "color": "text-bg-info "
        
     },
     {
@@ -36,7 +36,7 @@
         "price": 22,
         "description": "Pate con Res de Escencia Vegetal",
         "images": "abocado5.jpg",
-        "color": "text-bg-info "
+        "color": "text-bg-secondary  "
        
     },
     {

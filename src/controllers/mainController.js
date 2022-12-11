@@ -12,15 +12,6 @@ const mainController = {
     products:(req, res) => {
         res.render('products/products', {products: products});
     }, // sacamos la funcion de router
-    detalles: (req, res) => { 
-        products.forEach(product => {
-            if (product.id == req.params.id) {
-                res.render('products/detalles', {products: product})
-            }
-        })
-        res.redirect('/not-found');
-        console.log(req.params.id);
-    }
 }
 
 // exportando
