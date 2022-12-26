@@ -14,21 +14,25 @@
 
     <div class="container">
         <h1 class="text-secondary">FORM EDIT A PRODUCTS</h1>
-        <form method="post" action="/products" class="col-sm-4">
-            <label for="" class ="form-label"> Name </label>
-                <input class="form-control" type="text" name="Name">
+        <form method="post" action="/products" class="col-sm-4" enctype="multipart/form-data">
+            <label for="id" class ="form-label"> Id </label>
+                <input class="form-control placeholder" placeholder="<%= products.id %>" type="text" id="id" name="id">
+            <label for="name" class ="form-label"> Name </label>
+                <input class="form-control placeholder" placeholder="<%= products.name%>" type="text" id="name" name="name">
         
-            <label for="" class ="form-label"> Brand </label>
-                <input class="form-control" type="text" name="Brand">
+            <label for="brand" class ="form-label"> Brand </label>
+                <input class="form-control placeholder" placeholder="<%= products.brand%>" type="text" id="brand" name="brand">
 
-            <label for="" class ="form-label"> Price </label>
-                <input class="form-control" type="text" name="Price">
+            <label for="price" class ="form-label"> Price </label>
+                <input class="form-control placeholder" placeholder="<%= products.price%>" type="text" id="price" name="price">
 
-            <label for="" class ="form-label"> Description </label>
-                <input class="form-control" type="text" name="Description">
+            <label for="description" class ="form-label"> Description </label>
+                <input class="form-control placeholder" placeholder="<%= products.description%>" type="text" id="description" name="description">
 
-            <label for="" class ="form-label"> Image </label>
-                <input class="form-control" type="text" name="Image">
+            <label for="images" class ="form-label" > Image </label>
+                <input class="form-control placeholder" id="images" name="images" type="file">
+                
+            <input class="form-control" type="submit" value="submit">
         </form>
     </div>
 

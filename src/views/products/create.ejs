@@ -14,21 +14,23 @@
 
     <div class="container">
         <h1 class="text-secondary">FORM ADD PRODUCTS</h1>
-        <form method="post" action="/products" class="col-sm-4">
-            <label for="" class ="form-label"> Name </label>
-                <input class="form-control" type="text" name="Name">
+        <form method="post" action="/products/create" class="col-sm-4" enctype="multipart/form-data">
+            <label for="name" class ="form-label"> Name </label>
+                <input class="form-control" id="name" type="text" name="name">
         
-            <label for="" class ="form-label"> Brand </label>
-                <input class="form-control" type="text" name="Brand">
+            <label for="brand" class ="form-label"> Brand </label>
+                <input class="form-control" id="brand" type="text" name="brand">
 
-            <label for="" class ="form-label"> Price </label>
-                <input class="form-control" type="text" name="Price">
+            <label for="price" class ="form-label"> Price </label>
+                <input class="form-control" id="price" type="text" name="price">
 
-            <label for="" class ="form-label"> Description </label>
-                <input class="form-control" type="text" name="Description">
+            <label for="description" class ="form-label"> Description </label>
+                <input class="form-control" id="description" type="text" name="description">
 
-            <label for="" class ="form-label"> Image </label>
-                <input class="form-control" type="text" name="Image">
+            <label for="images" class ="form-label"> Image </label>
+                <input class="form-control" id="images" name="images" type="file">
+                
+            <input class="form-control" type="submit" value="submit">
         </form>
     </div>
 

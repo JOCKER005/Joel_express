@@ -6662,8 +6662,9 @@ textarea.form-control-lg {
   min-height: 1em;
   vertical-align: middle;
   cursor: wait;
-  background-color: currentcolor;
+  background-color: transparent;
   opacity: 0.5;
+  
 }
 .placeholder.btn::before {
   display: inline-block;

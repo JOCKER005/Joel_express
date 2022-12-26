@@ -1,61 +1,74 @@
 [
-    {
-        "id": 1,
-        "name": "CHOP SUEY",
-        "brand": "CHINA",
-        "price": 30,
-        "description": "Fideo de arroz con caldo de res",
-        "images": "chop_suey.jpg",
-        "color": "text-bg-dark"
-        
-    },
-    {
-        "id": 2,
-        "name": "SOUV BELIGNION",
-        "brand": "España",
-        "price": 15,
-        "description": "Año 1999 cepas varietales",
-        "images": "souv_belignion.jpg",
-        "color": "text-bg-primary "
-       
-    },
-    {
-        "id": 3,
-        "name": " CANAPPE BRUNCH ",
-        "brand": "Ibiza",
-        "price": 19,
-        "description": "Integrales good Organicos",
-        "images": "abocado3.jpg",
-        "color": "text-bg-info "
-       
-    },
-    {
-        "id": 4,
-        "name": " PATE DELICIUS ",
-        "brand": "Italia",
-        "price": 22,
-        "description": "Pate con Res de Escencia Vegetal",
-        "images": "abocado5.jpg",
-        "color": "text-bg-secondary  "
-       
-    },
-    {
-        "id": 5,
-        "name": "CocoUp MEGA",
-        "brand": "Havana",
-        "price": 25,
-        "description": "Postre Mix Queen Fruit, Fresco ",
-        "images": "gastronomi4.jpg",
-        "color": "text-bg-info "
-        
-    },
-    {
-        "id": 6,
-        "name": "BREAKFAST",
-        "brand": "REINO UNIDO",
-        "price": 10,
-        "description": "Coffee Cortado Doble ",
-        "images": "abocado2.jpg",
-        "color": "text-bg-primary "
-    }
+  {
+    "id": 1,
+    "name": "CHOP SUEY",
+    "brand": "CHINA",
+    "price": 30,
+    "description": "Fideo de arroz con caldo de res",
+    "images": "chop_suey.jpg",
+    "color": "text-bg-dark"
+  },
+  {
+    "id": 2,
+    "name": "SOUV BELIGNION",
+    "brand": "España",
+    "price": 15,
+    "description": "Año 1999 cepas varietales",
+    "images": "souv_belignion.jpg",
+    "color": "text-bg-primary "
+  },
+  {
+    "id": 3,
+    "name": " CANAPPE BRUNCH ",
+    "brand": "Ibiza",
+    "price": 19,
+    "description": "Integrales good Organicos",
+    "images": "abocado3.jpg",
+    "color": "text-bg-info "
+  },
+  {
+    "id": 4,
+    "name": " PATE DELICIUS ",
+    "brand": "Italia",
+    "price": 22,
+    "description": "Pate con Res de Escencia Vegetal",
+    "images": "abocado5.jpg",
+    "color": "text-bg-secondary  "
+  },
+  {
+    "id": 5,
+    "name": "CocoUp MEGA",
+    "brand": "Havana",
+    "price": 25,
+    "description": "Postre Mix Queen Fruit, Fresco ",
+    "images": "gastronomi4.jpg",
+    "color": "text-bg-info "
+  },
+  {
+    "id": 6,
+    "name": "BREAKFAST",
+    "brand": "REINO UNIDO",
+    "price": 10,
+    "description": "Coffee Cortado Doble ",
+    "images": "abocado2.jpg",
+    "color": "text-bg-primary "
+  },
+  {
+    "id": 7,
+    "name": "Wiskey Sour",
+    "brand": "Ibiza",
+    "price": 14,
+    "description": "Red Label, clara de huevo, limon y un aromatico aroma amaderado",
+    "images": "1671748624934.jpg",
+    "color": "text-bg-primary "
+  },
+  {
+    "id": 8,
+    "name": "limonada con jengibre ",
+    "brand": "Habana",
+    "price": 3,
+    "description": "limonada, naranja, menta y jengibre",
+    "images": "1671748905305.jpg",
+    "color": "text-bg-primary "
+  }
 ]

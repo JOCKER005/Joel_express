@@ -37,7 +37,7 @@
             <h2 class="display-7 fw-bold lh-1 mb-3"><%= products.name %></h2>
             <p class="lead"><%= products.name %>, Origen <%= products.brand %>, <%= products.description %>, FOR SALE <%= products.price%>$</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary px-3 me-md-2"><a class="nav-link" href="/products/edit">EDITAR</a></button>
+              <button type="button" class="btn btn-primary px-3 me-md-2"><a class="nav-link" href="edit/<%= products.id %>">EDITAR</a></button>
               <button type="button" class="btn btn-outline-secondary px-2"><a class="nav-link" href="/products">VOLVER</a></button>
             </div>
           </div>
