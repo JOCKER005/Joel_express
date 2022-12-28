@@ -1,18 +1,16 @@
-const path = require('path');
-const fs = require('fs');
-// require tercers
-const pathJson = path.resolve(__dirname, '../data/products.json');
-const productsJson = fs.readFileSync(pathJson, 'utf8');
-const products = JSON.parse(productsJson);
+const Product = require ('../data/models/Product');
 
-const mainController = {
-    home: (req, res) => { 
-        res.render('home', {products: products});
+module.exports = {
+    home: async function (req, res) { 
+        const product = await Product.find({});
+        console.log(product)
+        // res.render("home", {products, product});
     },
-    products:(req, res) => {
-        res.render('products/products', {products: products});
-    }, // sacamos la funcion de router
-}
+    products: async function (req, res) { 
+        const product = await Product.find({});
+        console.log(product)
+        // res.render('products/products', {products: product});
+    }, 
+};
 
 // exportando
-module.exports = mainController ;
