@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type = "text/css" rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/ht.js" defer></script>
+
     <title>Detalles</title>
 </head>
 <body>
@@ -12,21 +14,7 @@
     <%- include('../partials/header')  %> 
     <!-- /HEADER -->
         
-    <!-- <div class="container <%= products.color %> px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center">
-        <div class="col-10 col-sm-8 col-lg-6">
-            <img class="bd-placeholder-img card-img-top" width="600" height="535" src="/images/<%= products.images %>" alt="<%= products.name %>"/>
-        </div>
-        <div class="col-lg-5">
-          <h1 class="display-4 mb-4"><%= products.name %></h1>
-          <p class="lead"><%= products.description %></p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Editar</button>
-            <button type="button" class="btn btn-primary btn-lg px-4"><a class="nav-link" href="/products">volver</a></button>
-          </div>
-        </div>
-      </div>
-    </div> -->
+     
     
     <div class="container <%= products.color %> col-xxl-8 px-4 py-1">
         <div class="row flex-lg-row-reverse align-items-center g-2 py-1">
@@ -37,8 +25,8 @@
             <h2 class="display-7 fw-bold lh-1 mb-3"><%= products.name %></h2>
             <p class="lead"><%= products.name %>, Origen <%= products.brand %>, <%= products.description %>, FOR SALE <%= products.price%>$</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary px-3 me-md-2"><a class="nav-link" href="edit/<%= products.id %>">EDITAR</a></button>
-              <button type="button" class="btn btn-outline-secondary px-2"><a class="nav-link" href="/products">VOLVER</a></button>
+              <button type="button" class="btn btn-primary px-3 me-md-2"><a class="nav-link"  href="/products/edit/<%= products.id %>">EDITAR</a></button>
+              <button type="button" class="btn btn-outline-secondary px-2"  onclick="rm()"><a class="nav-link" href="/products/remove/<%= products.id %> ">Remove</a></button>
             </div>
           </div>
         </div>

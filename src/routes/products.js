@@ -32,9 +32,11 @@ const upload = multer ({
 
 router.get('/', mainController.products);
 router.get('/detalles/:id', productsController.detalles) ;
-router.get('/create', productsController.create)
-router.get('/edit/:id', productsController.edit)
-router.post('/create', upload.single("images"), productsController.store)
+router.get('/create', productsController.create);
+router.get('/edit/:id', productsController.edit);
+router.get('/remove/:id', productsController.remove);
+router.post('/editado', productsController.editado);
+router.post('/create', upload.single("images"), productsController.store); 
 
 // router.create('/products/create', userscontroller.create)
 

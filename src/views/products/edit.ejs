@@ -14,20 +14,20 @@
 
     <div class="container">
         <h1 class="text-secondary">FORM EDIT A PRODUCTS</h1>
-        <form method="post" action="/products" class="col-sm-4" enctype="multipart/form-data">
+        <form method="post" action="/products/editado" class="col-sm-4" >
             <label for="id" class ="form-label"> Id </label>
-                <input class="form-control placeholder" placeholder="<%= products.id %>" type="text" id="id" name="id">
+                <input class="form-control placeholder" value="<%= products.id %>" type="text" id="id" name="id">
             <label for="name" class ="form-label"> Name </label>
-                <input class="form-control placeholder" placeholder="<%= products.name%>" type="text" id="name" name="name">
+                <input class="form-control placeholder" value="<%= products.name%>" type="text" id="name" name="name">
         
             <label for="brand" class ="form-label"> Brand </label>
-                <input class="form-control placeholder" placeholder="<%= products.brand%>" type="text" id="brand" name="brand">
+                <input class="form-control placeholder" value="<%= products.brand%>" type="text" id="brand" name="brand">
 
             <label for="price" class ="form-label"> Price </label>
-                <input class="form-control placeholder" placeholder="<%= products.price%>" type="text" id="price" name="price">
+                <input class="form-control placeholder" value="<%= products.price%>" type="text" id="price" name="price">
 
             <label for="description" class ="form-label"> Description </label>
-                <input class="form-control placeholder" placeholder="<%= products.description%>" type="text" id="description" name="description">
+                <input class="form-control placeholder" value="<%= products.description%>" type="text" id="description" name="description">
 
             <label for="images" class ="form-label" > Image </label>
                 <input class="form-control placeholder" id="images" name="images" type="file">
